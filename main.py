@@ -44,6 +44,10 @@ for i in contacts_list[1:]:
 
     for contact in new_list:
         if contact[0] == last_name and contact[1] == first_name:
+            if organization:
+                contact[3] = organization
+            if position:
+                contact[4] = position
             if phone_number:
                 contact[5] = phone_number
             if mail:
